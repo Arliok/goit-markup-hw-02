@@ -7,6 +7,7 @@
   --company-color: #2196f3;
   --footer-address: rgba(255, 255, 255, 0.6);
   --logo-black: #000000;
+  --button-hover: #188ce8;
 }
 
 body {
@@ -146,14 +147,18 @@ body {
   font-family: inherit;
 }
 
-.button.primary {
+.primary {
+  color: var(--background-main);
+  background-color: var(--company-color);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
 }
-
-.button.primary,
+.primary:focus,
+.primary:hover {
+  background-color: var(--button-hover);
+}
 .button:hover,
 .button:focus {
   color: var(--background-main);
