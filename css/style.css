@@ -21,7 +21,8 @@ body {
 .list {
   list-style: none;
 }
-.link {
+.link,
+.link-current {
   text-decoration: none;
 }
 .logo {
@@ -38,6 +39,9 @@ body {
   text-decoration-line: none;
 }
 /*top-line*/
+.link-current {
+  color: #2196f3;
+}
 .top-line .link {
   color: var(--primary-text);
   font-weight: 500;
@@ -108,6 +112,9 @@ body {
   color: #757575;
 }
 /*team*/
+.team {
+  background-color: var(--background-three);
+}
 .team-cards,
 .team-member {
   font-size: 16px;
